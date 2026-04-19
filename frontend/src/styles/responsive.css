@@ -1,0 +1,701 @@
+/* Responsive Design - Mobile First Approach */
+
+/* Mobile First - Default styles for small screens */
+/* Tablet 768px and up */
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* Laptop 1024px and up */
+@media (min-width: 1024px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* Desktop 1440px and up */
+@media (min-width: 1440px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* ===== MOBILE RESPONSIVE (max-width: 640px) ===== */
+@media (max-width: 640px) {
+    .container {
+        padding: 0 1rem !important;
+        margin: 0 auto;
+    }
+
+    /* Typography */
+    h1 { font-size: 2rem !important; }
+    h2 { font-size: 1.5rem !important; }
+    h3 { font-size: 1.2rem !important; }
+    h4 { font-size: 1rem !important; }
+
+    /* Hero Section */
+    .hero-section {
+        padding: 2rem 0 2.5rem !important;
+    }
+
+    .hero {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+        padding: 1rem 0 !important;
+    }
+
+    .hero-content {
+        gap: 0.75rem !important;
+    }
+
+    .hero-badge {
+        font-size: 0.75rem !important;
+        padding: 0.4rem 0.75rem !important;
+        margin-bottom: 0.75rem !important;
+    }
+
+    .hero-title {
+        font-size: 1.5rem !important;
+        line-height: 1.3 !important;
+        margin-bottom: 0.75rem !important;
+    }
+
+    .hero-desc {
+        font-size: 0.9rem !important;
+        margin-bottom: 1rem !important;
+        line-height: 1.6 !important;
+    }
+
+    .hero-cta {
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+        margin-bottom: 1.25rem !important;
+    }
+
+    .hero-cta .btn {
+        padding: 0.7rem 1.2rem !important;
+        font-size: 0.9rem !important;
+        width: 100% !important;
+    }
+
+    .hero-stats {
+        flex-direction: column !important;
+        gap: 1rem !important;
+        margin-top: 1rem !important;
+        padding-top: 1rem !important;
+    }
+
+    .stat-item {
+        flex-direction: row !important;
+        align-items: center !important;
+        gap: 0.5rem !important;
+        padding-bottom: 0.75rem !important;
+    }
+
+    .stat-number {
+        font-size: 1.25rem !important;
+    }
+
+    .stat-label {
+        font-size: 0.75rem !important;
+    }
+
+    .carousel-container {
+        height: 280px !important;
+    }
+
+    .image-card img {
+        height: 280px !important;
+        object-fit: cover !important;
+    }
+
+    .carousel-btn {
+        width: 40px !important;
+        height: 40px !important;
+        font-size: 1.2rem !important;
+    }
+
+    /* Grid */
+    .grid-cols-2,
+    .grid-cols-3,
+    .grid-cols-4 {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 0.65rem 1rem !important;
+        font-size: 0.9rem !important;
+    }
+
+    .btn-lg {
+        padding: 0.8rem 1.5rem !important;
+        font-size: 0.95rem !important;
+    }
+
+    /* Forms */
+    .form-control {
+        padding: 0.75rem 0.95rem !important;
+        font-size: 0.95rem !important;
+    }
+
+    .form-label {
+        font-size: 0.9rem !important;
+        margin-bottom: 0.4rem !important;
+    }
+
+    /* Sections */
+    .features-section {
+        padding: 2.5rem 0 !important;
+    }
+
+    .lapangan-section {
+        padding: 2.5rem 0 !important;
+    }
+
+    .promo-section {
+        padding: 2.5rem 0 !important;
+    }
+
+    .section-title {
+        font-size: 1.75rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .section-subtitle {
+        font-size: 0.95rem !important;
+    }
+
+    /* Cards */
+    .card {
+        padding: 1.5rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .card-title {
+        font-size: 1.15rem !important;
+        margin-bottom: 0.4rem !important;
+    }
+
+    .card-subtitle {
+        font-size: 0.85rem !important;
+        margin-bottom: 0.75rem !important;
+    }
+
+    .card-price {
+        font-size: 1.2rem !important;
+        margin-bottom: 0.75rem !important;
+    }
+
+    /* Time Slots */
+    .time-slot {
+        padding: 0.8rem !important;
+        margin: 0.4rem 0 !important;
+        font-size: 0.9rem !important;
+    }
+
+    /* Payment Methods */
+    .methods-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
+
+    .payment-method-card {
+        flex-direction: column !important;
+        text-align: center !important;
+        padding: 1.25rem !important;
+    }
+
+    .method-icon {
+        width: 48px !important;
+        height: 48px !important;
+        margin: 0 auto !important;
+    }
+
+    .method-radio {
+        margin: 0 auto !important;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 2rem 0 1rem !important;
+        margin-top: 2rem !important;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .footer-brand {
+        font-size: 1rem !important;
+    }
+
+    .footer-title {
+        font-size: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .footer-title::after {
+        width: 25px !important;
+    }
+
+    .footer-links li a {
+        font-size: 0.9rem !important;
+    }
+
+    .operating-hours {
+        gap: 0.75rem !important;
+    }
+
+    .hours-item {
+        padding: 0.75rem !important;
+        font-size: 0.85rem !important;
+    }
+
+    .hours-icon {
+        font-size: 1.2rem !important;
+    }
+
+    .hours-label {
+        font-size: 0.75rem !important;
+    }
+
+    .hours-value {
+        font-size: 0.9rem !important;
+    }
+
+    /* Badge */
+    .badge {
+        padding: 0.35rem 0.7rem !important;
+        font-size: 0.75rem !important;
+    }
+
+    /* Utility spacing */
+    .mb-1 { margin-bottom: 0.4rem !important; }
+    .mb-2 { margin-bottom: 0.8rem !important; }
+    .mb-3 { margin-bottom: 1.2rem !important; }
+    .mb-4 { margin-bottom: 1.6rem !important; }
+
+    .mt-1 { margin-top: 0.4rem !important; }
+    .mt-2 { margin-top: 0.8rem !important; }
+    .mt-3 { margin-top: 1.2rem !important; }
+    .mt-4 { margin-top: 1.6rem !important; }
+
+    .px-1 { padding-left: 0.4rem !important; padding-right: 0.4rem !important; }
+    .px-2 { padding-left: 0.8rem !important; padding-right: 0.8rem !important; }
+    .px-3 { padding-left: 1.2rem !important; padding-right: 1.2rem !important; }
+
+    .py-1 { padding-top: 0.4rem !important; padding-bottom: 0.4rem !important; }
+    .py-2 { padding-top: 0.8rem !important; padding-bottom: 0.8rem !important; }
+    .py-3 { padding-top: 1.2rem !important; padding-bottom: 1.2rem !important; }
+
+    /* Alert */
+    .alert {
+        padding: 1rem 1.25rem !important;
+        margin-bottom: 1rem !important;
+        font-size: 0.9rem !important;
+    }
+
+    /* Lapangan Card Button */
+    .lapangan-footer {
+        flex-direction: column !important;
+        gap: 0.75rem !important;
+    }
+
+    .lapangan-btn {
+        padding: 0.65rem !important;
+        font-size: 0.85rem !important;
+    }
+}
+
+/* ===== TABLET RESPONSIVE (641px - 1024px) ===== */
+@media (max-width: 1024px) and (min-width: 641px) {
+    .container {
+        padding: 0 1.5rem !important;
+    }
+
+    /* Hero Section */
+    .hero {
+        grid-template-columns: 1fr !important;
+        gap: 2.5rem !important;
+    }
+
+    .hero-title {
+        font-size: 2.2rem !important;
+    }
+
+    .carousel-container {
+        height: 400px !important;
+    }
+
+    .image-card img {
+        height: 400px !important;
+    }
+
+    /* Grid */
+    .grid-cols-3,
+    .grid-cols-4 {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    /* Section */
+    .features-section {
+        padding: 4rem 0 !important;
+    }
+
+    .lapangan-section {
+        padding: 4rem 0 !important;
+    }
+
+    .section-title {
+        font-size: 2rem !important;
+    }
+
+    /* Payment Methods */
+    .methods-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .payment-method-card {
+        flex-direction: row !important;
+        text-align: left !important;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+/* ===== LARGE DESKTOP (1441px and above) ===== */
+@media (min-width: 1441px) {
+    .container {
+        max-width: 1400px !important;
+        padding: 0 5rem !important;
+    }
+
+    .hero-title {
+        font-size: 3.5rem !important;
+    }
+
+    .section-title {
+        font-size: 2.75rem !important;
+    }
+
+    .carousel-container {
+        height: 650px !important;
+    }
+
+    .image-card img {
+        height: 650px !important;
+    }
+}
+
+/* ===== LANDSCAPE MODE (Height < Width) ===== */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero-section {
+        padding: 1.5rem 0 2rem !important;
+    }
+
+    .hero {
+        padding: 1rem 0 !important;
+    }
+
+    .carousel-container {
+        height: 300px !important;
+    }
+
+    .image-card img {
+        height: 300px !important;
+    }
+
+    .hero-stats {
+        margin-top: 1rem !important;
+        padding-top: 1rem !important;
+    }
+}
+
+/* ===== PORTRAIT MODE (Height > Width) ===== */
+@media (max-width: 480px) and (orientation: portrait) {
+    .hero-section {
+        padding: 1.75rem 0 2.25rem !important;
+    }
+
+    .carousel-container {
+        height: 250px !important;
+    }
+
+    .image-card img {
+        height: 250px !important;
+    }
+}
+
+/* ===== VERY SMALL SCREENS (< 320px) ===== */
+@media (max-width: 320px) {
+    .container {
+        padding: 0 0.75rem !important;
+    }
+
+    /* Typography */
+    h1 { font-size: 1.3rem !important; }
+    h2 { font-size: 1.1rem !important; }
+    h3 { font-size: 1rem !important; }
+
+    .hero-title {
+        font-size: 1.3rem !important;
+        line-height: 1.2 !important;
+    }
+
+    .hero-desc {
+        font-size: 0.8rem !important;
+    }
+
+    .btn {
+        padding: 0.6rem 0.9rem !important;
+        font-size: 0.85rem !important;
+    }
+
+    .carousel-container {
+        height: 200px !important;
+    }
+
+    .image-card img {
+        height: 200px !important;
+    }
+
+    .card-title {
+        font-size: 1rem !important;
+    }
+
+    .card-price {
+        font-size: 1rem !important;
+    }
+
+    .time-slot {
+        padding: 0.6rem !important;
+        font-size: 0.8rem !important;
+    }
+}
+
+/* ===== TOUCH DEVICES ===== */
+@media (hover: none) and (pointer: coarse) {
+    .btn {
+        min-height: 44px !important; /* iOS minimum touch target */
+        min-width: 44px !important;
+    }
+
+    .nav-link {
+        padding: 0.75rem 1.25rem !important;
+        min-height: 44px !important;
+    }
+
+    .time-slot {
+        padding: 1rem !important;
+    }
+
+    .payment-method-card {
+        padding: 1.5rem !important;
+    }
+
+    /* Remove hover effects on touch devices */
+    .btn:hover {
+        transform: none !important;
+    }
+
+    .card:hover {
+        transform: none !important;
+    }
+
+    .nav-link:hover::after {
+        width: 0 !important;
+    }
+}
+
+/* ===== BOOKING PAGE RESPONSIVE STYLES ===== */
+
+/* Desktop and Tablet - 2 column layout */
+@media (min-width: 1025px) {
+    .booking-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .booking-card {
+        background: white;
+        border-radius: 0.75rem;
+        padding: 1.5rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        border: 1px solid #e5e7eb;
+    }
+
+    .booking-info-box {
+        background: linear-gradient(135deg, #f0f9ff 0%, #f8fafc 100%);
+        border-radius: 0.75rem;
+        padding: 1.5rem;
+        border-left: 4px solid #3b82f6;
+        margin-bottom: 1.5rem;
+    }
+
+    .time-slots-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.8rem;
+    }
+
+    .booking-form-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+}
+
+/* Tablet - 1 column with adjusted spacing */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .booking-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .booking-card {
+        background: white;
+        border-radius: 0.75rem;
+        padding: 1.25rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        border: 1px solid #e5e7eb;
+    }
+
+    .booking-info-box {
+        background: linear-gradient(135deg, #f0f9ff 0%, #f8fafc 100%);
+        border-radius: 0.75rem;
+        padding: 1.25rem;
+        border-left: 4px solid #3b82f6;
+        margin-bottom: 1rem;
+    }
+
+    .time-slots-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.7rem;
+    }
+
+    .booking-form-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.25rem;
+    }
+}
+
+/* Mobile - Full width single column */
+@media (max-width: 640px) {
+    .booking-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .booking-card {
+        background: white;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        border: 1px solid #e5e7eb;
+    }
+
+    .booking-card h3 {
+        font-size: 1.1rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .booking-info-box {
+        background: linear-gradient(135deg, #f0f9ff 0%, #f8fafc 100%);
+        border-radius: 0.5rem;
+        padding: 1rem;
+        border-left: 3px solid #3b82f6;
+        margin-bottom: 1rem;
+    }
+
+    .booking-info-box p {
+        font-size: 0.95rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .booking-info-box .price-display {
+        font-size: 1.25rem !important;
+        font-weight: 600 !important;
+        color: #0ea5e9 !important;
+    }
+
+    .time-slots-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.6rem;
+    }
+
+    .time-slot {
+        padding: 0.75rem !important;
+        font-size: 0.85rem !important;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .booking-form-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .form-group {
+        margin-bottom: 1rem !important;
+    }
+
+    .form-label {
+        font-size: 0.95rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .form-control {
+        font-size: 16px !important;
+        min-height: 44px !important;
+        padding: 0.75rem !important;
+    }
+
+    textarea.form-control {
+        min-height: 100px !important;
+    }
+
+    .btn-success {
+        min-height: 44px !important;
+        font-size: 1rem !important;
+        margin-top: 1rem !important;
+    }
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+    .navbar,
+    .footer {
+        display: none !important;
+    }
+
+    .container {
+        padding: 0 !important;
+        max-width: 100% !important;
+    }
+
+    .card,
+    .alert {
+        page-break-inside: avoid !important;
+    }
+}
