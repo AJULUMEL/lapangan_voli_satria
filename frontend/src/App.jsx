@@ -13,6 +13,8 @@ import './styles/footer.css';
 import './styles/payment.css';
 import './styles/utilities.css';
 import './styles/responsive.css';
+import './styles/home.css';
+import './styles/booking.css';
 
 function AppContent() {
   const location = useLocation();

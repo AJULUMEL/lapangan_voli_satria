@@ -1,0 +1,578 @@
+/* Home Page Specific Styles */
+.home-container {
+    min-height: 100vh;
+    background: #0f172a;
+    color: #fff;
+}
+
+/* Navbar Styles */
+.home-navbar {
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.home-navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(135deg, #00d4ff 0%, #0099ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 6rem 2rem 4rem;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.12) 0%, rgba(0, 153, 255, 0.08) 100%);
+    border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 60px rgba(0, 212, 255, 0.1);
+}
+
+.hero-title {
+    font-size: clamp(1.75rem, 6vw, 4rem);
+    font-weight: 800;
+    margin: 0 0 1.5rem 0;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+}
+
+.hero-subtitle {
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    opacity: 0.8;
+    max-width: 600px;
+    margin: 0 auto 2.5rem auto;
+    line-height: 1.6;
+}
+
+.hero-cta-button {
+    padding: 1rem 2.5rem;
+    background: linear-gradient(135deg, #00d4ff 0%, #0099ff 100%);
+    color: #000;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 8px 32px rgba(0, 212, 255, 0.3);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.hero-cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(0, 212, 255, 0.4);
+}
+
+/* Features Section */
+.features-section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: clamp(1.75rem, 5vw, 2.5rem);
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 3rem;
+    background: linear-gradient(135deg, #00d4ff 0%, #0099ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(0, 212, 255, 0.4);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.feature-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.feature-desc {
+    font-size: 0.95rem;
+    opacity: 0.7;
+    line-height: 1.6;
+}
+
+/* Steps Section */
+.steps-section {
+    padding: 4rem 2rem;
+    background: rgba(0, 212, 255, 0.05);
+    border-top: 1px solid rgba(0, 212, 255, 0.2);
+    border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+.steps-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.step-card {
+    text-align: center;
+    position: relative;
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #00d4ff 0%, #0099ff 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0 auto 1rem auto;
+    color: #000;
+    box-shadow: 0 4px 20px rgba(0, 212, 255, 0.3);
+}
+
+.step-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.step-desc {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    line-height: 1.5;
+}
+
+/* Lapangan Section */
+.lapangan-section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lapangan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.lapangan-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    border-radius: 16px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.lapangan-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(0, 212, 255, 0.5);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.lapangan-card-header {
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.2) 0%, rgba(0, 153, 255, 0.2) 100%);
+    border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+.lapangan-card-body {
+    padding: 2rem;
+}
+
+.lapangan-title {
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.status-badge {
+    display: inline-block;
+    background: #10b981;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.price-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+}
+
+.price-item {
+    background: rgba(0, 212, 255, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.price-time {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    margin-bottom: 0.4rem;
+}
+
+.price-amount {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #00d4ff;
+}
+
+.book-button {
+    width: 100%;
+    padding: 0.9rem;
+    background: linear-gradient(135deg, #00d4ff 0%, #0099ff 100%);
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.book-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 212, 255, 0.3);
+}
+
+/* Footer */
+.home-footer {
+    padding: 3rem 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 212, 255, 0.1);
+    text-align: center;
+}
+
+.footer-text {
+    opacity: 0.7;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+/* ===== MOBILE RESPONSIVE (max-width: 768px) ===== */
+@media (max-width: 768px) {
+    .home-navbar {
+        padding: 1rem 1.5rem;
+    }
+
+    .home-navbar-logo {
+        font-size: 1.2rem;
+    }
+
+    .hero-section {
+        padding: 3rem 1rem 2rem;
+    }
+
+    .hero-title {
+        margin-bottom: 1rem;
+    }
+
+    .hero-subtitle {
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-cta-button {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.95rem;
+        width: 100%;
+    }
+
+    .features-section {
+        padding: 2.5rem 1rem;
+    }
+
+    .section-title {
+        margin-bottom: 2rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .feature-card {
+        padding: 1.5rem;
+    }
+
+    .feature-icon {
+        font-size: 2.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .feature-title {
+        font-size: 1.1rem;
+    }
+
+    .feature-desc {
+        font-size: 0.85rem;
+    }
+
+    .steps-section {
+        padding: 2.5rem 1rem;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .step-number {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .step-title {
+        font-size: 1rem;
+    }
+
+    .step-desc {
+        font-size: 0.85rem;
+    }
+
+    .lapangan-section {
+        padding: 2.5rem 1rem;
+    }
+
+    .lapangan-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .lapangan-card-header {
+        padding: 1.5rem;
+    }
+
+    .lapangan-card-body {
+        padding: 1.5rem;
+    }
+
+    .lapangan-title {
+        font-size: 1.2rem;
+    }
+
+    .price-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.75rem;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .price-item {
+        padding: 0.75rem;
+    }
+
+    .price-time {
+        font-size: 0.75rem;
+    }
+
+    .price-amount {
+        font-size: 1.1rem;
+    }
+
+    .book-button {
+        padding: 0.75rem;
+        font-size: 0.85rem;
+    }
+
+    .home-footer {
+        padding: 2rem 1rem;
+    }
+
+    .footer-text {
+        font-size: 0.8rem;
+    }
+}
+
+/* ===== EXTRA SMALL DEVICES (max-width: 480px) ===== */
+@media (max-width: 480px) {
+    .home-navbar {
+        padding: 0.75rem 1rem;
+    }
+
+    .home-navbar-logo {
+        font-size: 1rem;
+    }
+
+    .hero-section {
+        padding: 2rem 0.75rem 1.5rem;
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-cta-button {
+        padding: 0.65rem 1.25rem;
+        font-size: 0.85rem;
+        width: 100%;
+    }
+
+    .features-section {
+        padding: 1.5rem 0.75rem;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .features-grid {
+        gap: 0.75rem;
+    }
+
+    .feature-card {
+        padding: 1rem;
+    }
+
+    .feature-icon {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .feature-title {
+        font-size: 0.95rem;
+    }
+
+    .feature-desc {
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+
+    .steps-section {
+        padding: 1.5rem 0.75rem;
+    }
+
+    .steps-grid {
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .step-number {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+
+    .step-title {
+        font-size: 0.9rem;
+    }
+
+    .step-desc {
+        font-size: 0.8rem;
+    }
+
+    .lapangan-section {
+        padding: 1.5rem 0.75rem;
+    }
+
+    .lapangan-grid {
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .lapangan-card-header {
+        padding: 1rem;
+    }
+
+    .lapangan-card-body {
+        padding: 1rem;
+    }
+
+    .lapangan-title {
+        font-size: 1rem;
+    }
+
+    .price-grid {
+        gap: 0.5rem;
+        margin-bottom: 0.75rem;
+        padding-bottom: 0.75rem;
+    }
+
+    .price-item {
+        padding: 0.5rem;
+    }
+
+    .price-time {
+        font-size: 0.7rem;
+    }
+
+    .price-amount {
+        font-size: 1rem;
+    }
+
+    .book-button {
+        padding: 0.65rem;
+        font-size: 0.8rem;
+    }
+
+    .home-footer {
+        padding: 1.5rem 0.75rem;
+    }
+
+    .footer-text {
+        font-size: 0.75rem;
+    }
+}
